@@ -1,0 +1,3 @@
+interface:
+  display_name: "Anthropic: webapp-testing"
+  short_description: "Adapted webapp-testing workflow for Codex"

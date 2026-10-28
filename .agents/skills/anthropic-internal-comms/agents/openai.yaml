@@ -1,0 +1,3 @@
+interface:
+  display_name: "Anthropic: internal-comms"
+  short_description: "Adapted internal-comms workflow for Codex"
