@@ -1,0 +1,3 @@
+interface:
+  display_name: "Anthropic: slack-gif-creator"
+  short_description: "Adapted slack-gif-creator workflow for Codex"

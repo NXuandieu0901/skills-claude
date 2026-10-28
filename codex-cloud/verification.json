@@ -1,0 +1,110 @@
+{
+  "host": "Windows desktop, bundled Python; not Codex Cloud",
+  "source_commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "results": [
+    {
+      "check": "Bundle names and SHA-256",
+      "status": "PASS",
+      "output": "PASS: 5 skill manifests and 27 SHA-256 hashes",
+      "exit_code": 0
+    },
+    {
+      "check": "Dry-run without writes",
+      "status": "PASS",
+      "output": "PASS: 5 skill manifests and 27 SHA-256 hashes\nDRY RUN: 29 files; target=D:\\Codex GPT\\2026-10-28\\referenced-chatgpt-conversation-this-is-an-2\\work\\tmp6vveahc1\nCommit the resulting .agents/skills files to a branch used by Cloud tasks for durable reuse.",
+      "exit_code": 0
+    },
+    {
+      "check": "Install into isolated repository fixture",
+      "status": "PASS",
+      "output": "PASS: 5 skill manifests and 27 SHA-256 hashes\nAPPLIED: 29 files; target=D:\\Codex GPT\\2026-10-28\\referenced-chatgpt-conversation-this-is-an-2\\work\\tmp6vveahc1\nCommit the resulting .agents/skills files to a branch used by Cloud tasks for durable reuse.",
+      "exit_code": 0
+    },
+    {
+      "check": "Second installation is idempotent",
+      "status": "PASS",
+      "output": "PASS: 5 skill manifests and 27 SHA-256 hashes\nAPPLIED: 0 files; target=D:\\Codex GPT\\2026-10-28\\referenced-chatgpt-conversation-this-is-an-2\\work\\tmp6vveahc1\nCommit the resulting .agents/skills files to a branch used by Cloud tasks for durable reuse.",
+      "exit_code": 0
+    },
+    {
+      "check": "Reject overwrite and retain user content",
+      "status": "PASS",
+      "output": "PASS: 5 skill manifests and 27 SHA-256 hashes",
+      "exit_code": 1
+    },
+    {
+      "check": "Reject target outside a Git root",
+      "status": "PASS",
+      "output": "PASS: 5 skill manifests and 27 SHA-256 hashes",
+      "exit_code": 1
+    },
+    {
+      "check": "Python syntax",
+      "status": "PASS",
+      "files": 8
+    },
+    {
+      "check": "with_server command-line help",
+      "status": "PASS",
+      "output": "usage: with_server.py [-h] --server SERVERS --port PORTS [--timeout TIMEOUT]\n                      ...\n\nRun command with one or more servers\n\npositional arguments:\n  command            Command to run after server(s) ready\n\noptions:\n  -h, --help         show this help message and exit\n  --server SERVERS   Server command (can be repeated)\n  --port PORTS       Port for each server (must match --server count)\n  --timeout TIMEOUT  Timeout in seconds per server (default: 30)",
+      "exit_code": 0
+    },
+    {
+      "check": "Create and reopen a 3-frame GIF with bundled helper",
+      "status": "PASS",
+      "details": {
+        "file": "D:\\Codex GPT\\2026-10-28\\referenced-chatgpt-conversation-this-is-an-2\\work\\smoke.gif",
+        "passes": true,
+        "width": 128,
+        "height": 128,
+        "size_kb": 0.732421875,
+        "size_mb": 0.0007152557373046875,
+        "frame_count": 3,
+        "duration_seconds": 0.3,
+        "fps": 10.0,
+        "is_emoji": true,
+        "optimal": true
+      }
+    }
+  ],
+  "not_verified": [
+    "Cloud account/global plugin availability",
+    "Cloud discovery and invocation",
+    "Chromium runtime/browser test",
+    "Independent reader evaluation",
+    "Cross-device or cross-task Cloud persistence"
+  ],
+  "schema_validation": [
+    {
+      "skill": "anthropic-doc-coauthoring",
+      "status": "PASS",
+      "validator": "Skill is valid!"
+    },
+    {
+      "skill": "anthropic-frontend-design",
+      "status": "PASS",
+      "validator": "Skill is valid!"
+    },
+    {
+      "skill": "anthropic-internal-comms",
+      "status": "PASS",
+      "validator": "Skill is valid!"
+    },
+    {
+      "skill": "anthropic-slack-gif-creator",
+      "status": "PASS",
+      "validator": "Skill is valid!"
+    },
+    {
+      "skill": "anthropic-webapp-testing",
+      "status": "PASS",
+      "validator": "Skill is valid!"
+    }
+  ],
+  "test_dependencies": {
+    "imageio": "2.38.1",
+    "numpy": "2.5.4",
+    "pillow": "13.0.0",
+    "pyyaml": "6.0.3"
+  }
+}

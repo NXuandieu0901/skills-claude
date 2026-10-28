@@ -1,0 +1,3 @@
+interface:
+  display_name: "Anthropic: doc-coauthoring"
+  short_description: "Adapted doc-coauthoring workflow for Codex"

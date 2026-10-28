@@ -1,0 +1,3 @@
+interface:
+  display_name: "Anthropic: frontend-design"
+  short_description: "Adapted frontend-design workflow for Codex"
